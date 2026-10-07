@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>FlipShop</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     HEADER
+================================================== -->
+
+<header class="header">
+
+    <!-- LOGO -->
+
+    <div
+        class="logo"
+        onclick="location.reload()"
+        style="cursor:pointer;"
+    >
+        FlipShop
+    </div>
+
+
+    <!-- SEARCH -->
+
+    <div class="search-box">
+
+        <input
+            id="searchInput"
+            type="text"
+            placeholder="Search for products, brands and more"
+        >
+
+        <button id="searchButton">
+            🔍
+        </button>
+
+    </div>
+
+
+    <!-- LOGIN -->
+
+    <button
+        class="login-btn"
+        id="loginButton"
+    >
+        Login
+    </button>
+
+
+    <!-- WISHLIST -->
+
+    <button
+        class="wishlist-header-btn"
+        id="wishlistHeaderButton"
+        onclick="openWishlist()"
+    >
+
+        ❤️ Wishlist
+
+        <span id="wishlistCount">
+            0
+        </span>
+
+    </button>
+
+
+    <!-- MY ORDERS -->
+
+    <button
+        class="wishlist-header-btn"
+        id="myOrdersHeaderButton"
+        onclick="openMyOrders()"
+    >
+
+        📦 My Orders
+
+    </button>
+
+
+    <!-- CART -->
+
+    <div
+        class="cart"
+        id="cart"
+        onclick="openCart()"
+    >
+
+        🛒 Cart
+
+        <span id="cartCount">
+            0
+        </span>
+
+    </div>
+
+</header>
+
+
+
+<!-- ==================================================
+     CATEGORIES
+================================================== -->
+
+<section class="categories">
+
+
+    <div
+        class="category"
+        data-category="Mobiles"
+    >
+
+        <div class="category-icon">
+            📱
+        </div>
+
+        <p>
+            Mobiles
+        </p>
+
+    </div>
+
+
+
+    <div
+        class="category"
+        data-category="Electronics"
+    >
+
+        <div class="category-icon">
+            💻
+        </div>
+
+        <p>
+            Electronics
+        </p>
+
+    </div>
+
+
+
+    <div
+        class="category"
+        data-category="Fashion"
+    >
+
+        <div class="category-icon">
+            👕
+        </div>
+
+        <p>
+            Fashion
+        </p>
+
+    </div>
+
+
+
+    <div
+        class="category"
+        data-category="Home"
+    >
+
+        <div class="category-icon">
+            🏠
+        </div>
+
+        <p>
+            Home
+        </p>
+
+    </div>
+
+
+
+    <div
+        class="category"
+        data-category="Watches"
+    >
+
+        <div class="category-icon">
+            ⌚
+        </div>
+
+        <p>
+            Watches
+        </p>
+
+    </div>
+
+
+
+    <div
+        class="category"
+        data-category="Toys"
+    >
+
+        <div class="category-icon">
+            🧸
+        </div>
+
+        <p>
+            Toys
+        </p>
+
+    </div>
+
+
+
+    <div
+        class="category"
+        data-category="Audio"
+    >
+
+        <div class="category-icon">
+            🎧
+        </div>
+
+        <p>
+            Audio
+        </p>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ==================================================
+     BANNER
+================================================== -->
+
+<section class="banner">
+
+    <div class="banner-content">
+
+        <h1>
+            Big Shopping Sale
+        </h1>
+
+        <p>
+            Up to 70% Off
+        </p>
+
+        <button id="shopButton">
+            Shop Now
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     PRODUCTS
+================================================== -->
+
+<section
+    class="products-section"
+    id="productsSection"
+>
+
+    <!-- PRODUCT HEADING + SORT -->
+
+    <div class="products-heading">
+
+        <h2>
+            Best Deals
+        </h2>
+
+
+        <select id="sortProducts">
+
+            <option value="default">
+                Sort Products
+            </option>
+
+            <option value="priceLow">
+                Price: Low to High
+            </option>
+
+            <option value="priceHigh">
+                Price: High to Low
+            </option>
+
+            <option value="ratingHigh">
+                Rating: High to Low
+            </option>
+
+            <option value="nameAZ">
+                Name: A to Z
+            </option>
+
+            <option value="nameZA">
+                Name: Z to A
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <!-- PRODUCTS -->
+
+    <div
+        class="products"
+        id="products"
+    >
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+    <h3>
+        FlipShop
+    </h3>
+
+
+    <p>
+        Your trusted online shopping store
+    </p>
+
+
+    <p>
+        © 2026 FlipShop
+    </p>
+
+</footer>
+
+
+
+<!-- ==================================================
+     JAVASCRIPT
+================================================== -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
